@@ -1,0 +1,35 @@
+.sec-localizacao label{
+    display: block;
+}
+
+.sec-localizacao label:hover{
+    cursor: pointer;
+}
+
+.sec-localizacao{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.localizacao{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.localizacao select{
+    width: 4rem;
+}
+
+.referencia{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-localizacao input{
+    width: 100%;
+    font-size: 1rem;  
+    border-radius: .5rem;
+    border: 1px solid black;
+    padding: .425rem;
+}

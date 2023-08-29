@@ -1,0 +1,55 @@
+.sec-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastrar-button{
+    width: 6rem;
+    border: none;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border-radius: .5rem;
+    transition: all 0.2s ease;
+}
+
+.sec-buttons > button{
+    width: 6rem;
+    border: solid 1px black;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: .5rem;
+    transition: all 0.2s ease;
+}
+
+.cadastrar-button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    border: black solid 1px;
+    background-color: white;
+    color: black;
+}
+
+.sec-buttons > button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    border: black solid 1px;
+    background-color: black;
+    color: white;
+}
+
+.blocked{
+    width: 6rem;
+    border: none;
+    padding: 1rem;
+    background-color: grey;
+    color: white;
+    font-weight: 700;
+    border-radius: .5rem;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    cursor: not-allowed;
+}

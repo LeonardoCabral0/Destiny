@@ -1,0 +1,60 @@
+.container-failed{
+    min-height: 100vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-failed{
+   max-width: 32rem;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 3rem;
+   border-radius: .5rem;
+   gap: 2rem;
+   box-shadow: 10px 10px black;
+   animation: componentMount 300ms linear;
+}
+
+.message-failed img{
+    width: 4rem;
+    height: auto;
+}
+
+.message-failed h1{
+    text-align: center;
+}
+
+.button-failed{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-failed button{
+    width: 8rem;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    transition: all 200ms ease;
+}
+
+.button-failed button:hover{
+    transform: scale(1.02);
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.message-failed{
+    color: red;
+}

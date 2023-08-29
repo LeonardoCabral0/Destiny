@@ -1,0 +1,36 @@
+.cadastrar-content{
+    padding: 2rem;
+    gap: 1rem;
+    background-color: white;
+    margin: auto;
+    max-width: 34rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    font-weight: 700;
+    box-shadow: 7px 7px black;
+    border: solid 2px black;
+}
+
+.error{
+    font-weight: 700;
+    font-size: .8rem;
+    color: red;
+}
+
+.obrigatorio [type="text"]{
+    background-color: rgba(247, 72, 72, 0.2);
+}
+
+.obrigatorio textarea{
+    background-color: rgba(247, 72, 72, 0.2);
+}
+
+.obrigatorio label::after{
+    content: "*Campo Obrigatório";
+    display: block;
+    color:red;
+    font-size: .8rem;
+    cursor: auto;
+}
+

@@ -1,0 +1,18 @@
+import Options from '../Options/Options'
+import './Header.css'
+
+import logo from '/home/leonardo/Destiny/destiny/src/Destiny-logo-white.jpeg'
+
+export default function Header() {
+    return (
+        <header>
+            <div className="container-header">
+                <div className="container-logo">
+                    <img className="logo" src={logo} alt="Logo" />
+                    <h1>Destiny</h1>
+                </div>
+                <Options />
+            </div>
+        </header>
+    )
+}
