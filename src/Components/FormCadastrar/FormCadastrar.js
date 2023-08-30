@@ -66,7 +66,7 @@ export default function FormCadastrar() {
                 }
                 return response.json()
             })
-            .then(json => console.log(json));
+            
 
         setAddPost({
             nome: '',

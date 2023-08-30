@@ -31,7 +31,7 @@ export default class PageBuscar extends React.Component {
         fetch('https://localhost:44397/Post')
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                
                 this.setState({ allPosts: data })
             })
     }
@@ -69,7 +69,6 @@ export default class PageBuscar extends React.Component {
     render() {
         let { allPosts } = this.state
         const { searchValue, order } = this.state
-        console.log(allPosts)
 
         if (order !== "Decrescente") {
             allPosts = [...allPosts.reverse()]
