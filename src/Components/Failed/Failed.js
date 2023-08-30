@@ -2,7 +2,7 @@
 import { useNavigate } from 'react-router-dom';
 
 //Images
-import failed from '/home/leonardo/Destiny/destiny/src/Failed-icon.png';
+import failed from './Failed-icon.png';
 
 //CSS
 import './Failed.css';

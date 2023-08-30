@@ -3,7 +3,7 @@ import React from 'react';
 import Options from '../Options/Options'
 import './Header.css'
 
-import logo from '/home/leonardo/Destiny/destiny/src/Destiny-logo-white.jpeg'
+import logo from './Destiny-logo-white.jpeg'
 
 function Header() {
     return (

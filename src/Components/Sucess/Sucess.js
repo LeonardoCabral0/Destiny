@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import './Sucess.css'
 
 //Icon
-import iconSucess from '/home/leonardo/Destiny/destiny/src/icon-sucess.jpg'
+import iconSucess from './icon-sucess.jpg'
 
 export default function Sucess() {
     const navigate = useNavigate()
