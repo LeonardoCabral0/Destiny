@@ -24,7 +24,7 @@ Esse comando vai criar uma migration.
 ## Execute o comando `dotnet ef database update`
 Esse comando vai realizar a migration.
 
-## Execute o comando `dotnet run``
+## Execute o comando `dotnet run`
 
 Veja se a aplicação iniciou na porta "44397", caso não tenha iniciado você terá que mudar manualmente a porta que a aplicação react fará as requesições , dentro do diretório src/PageBuscar/PageBuscar.js na função "requestAllPost" e src/FormCadastrar/FormCadastrar.js na função "requestAddPost"
 
