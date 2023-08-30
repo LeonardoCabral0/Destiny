@@ -12,16 +12,16 @@ Inciar o aplicativo React
 
 # Iniciando a Web API
 
-Entre na pasta "WebAPI-SqlSever"
+Entre na pasta "WebAPI-SqlSever/WebAPI"
 
-Dentro da "WebAPI-SqlSever/appsettings.json" você pode cofigurar uma string de conexão diferente da padrão do projeto com um nome diferente de banco de dados, caso queira.
+Dentro da "WebAPI-SqlSever/WebAPI/appsettings.json" você pode cofigurar uma string de conexão diferente da padrão do projeto com um nome diferente de banco de dados, caso queira.
 
 # Abra um terminal dentro da pasta
 
-## Execute o comando `dotnet ef migrations add CriandoDB``
+## Execute o comando `dotnet ef migrations add CriandoDB`
 Esse comando vai criar uma migration.
 
-## Execute o comando `dotnet ef database update``
+## Execute o comando `dotnet ef database update`
 Esse comando vai realizar a migration.
 
 ## Execute o comando `dotnet run``
