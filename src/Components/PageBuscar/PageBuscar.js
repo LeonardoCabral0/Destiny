@@ -28,7 +28,7 @@ export default class PageBuscar extends React.Component {
     }
 
     requestAllPost = () => {
-        fetch('http://localhost:5151/Posts')
+        fetch('https://localhost:44397/Post')
             .then(response => response.json())
             .then(data => {
                 console.log(data)

@@ -1,66 +1,36 @@
-# Getting Started with Create React App
+# Iniciando a aplicação React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Comandos para iniciar a aplicação React
+### `npm install`
 
-## Available Scripts
-
-In the project directory, you can run:
+Instalar todos os pacotes referentes ao fronte end do site
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Inciar o aplicativo React
+**Necessário que a aplicação esteja rodando na porta 3000
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Iniciando a Web API
 
-### `npm test`
+Entre na pasta "WebAPI-SqlSever"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dentro da "WebAPI-SqlSever/appsettings.json" você pode cofigurar uma string de conexão diferente da padrão do projeto com um nome diferente de banco de dados, caso queira.
 
-### `npm run build`
+# Abra um terminal dentro da pasta
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Execute o comando `dotnet ef migrations add CriandoDB``
+Esse comando vai criar uma migration.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Execute o comando `dotnet ef database update``
+Esse comando vai realizar a migration.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Execute o comando `dotnet run``
 
-### `npm run eject`
+Veja se a aplicação iniciou na porta "44397", caso não tenha iniciado você terá que mudar manualmente a porta que a aplicação react fará as requesições , dentro do diretório src/PageBuscar/PageBuscar.js na função "requestAllPost" e src/FormCadastrar/FormCadastrar.js na função "requestAddPost"
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Utilizando a aplicação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A página seguiu o layout estabelecido basta clicar em "Cadastrar" colocar as informações do formulário e clicar no botão "Cadastrar" que a publicação ja será adicionada na pagina principal.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Página principal
+Possui um campo de busca com a opção de como as postagens vão ser ordenadas.

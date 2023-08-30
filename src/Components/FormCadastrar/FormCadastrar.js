@@ -54,7 +54,7 @@ export default function FormCadastrar() {
         else {
             formRef.current.classList.remove('obrigatorio')
         }
-        fetch('http://localhost:5151/Posts', {
+        fetch('https://localhost:44397/Post', {
             method: "POST",
             body: JSON.stringify(addPost),
             headers: { "Content-type": "application/json; charset=UTF-8" }
